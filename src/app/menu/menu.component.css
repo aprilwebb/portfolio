@@ -20,9 +20,10 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: lightgreen;
+    background-color: rgb(144, 192, 238);
     overflow-x: hidden;
     padding-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #nav a {
@@ -34,10 +35,28 @@
   text-align: center;
 }
 
-#nav a:hover{
+#nav a:hover, h1:hover{
   background-color: white;
-  color: lightgreen;
+  color: rgb(245, 78, 203);
 }
+
+.fa{
+  font-size: 30px;
+  width: 100%;
+  color: white;
+
+}
+
+ul .icons {
+  list-style: none;
+  overflow: auto;
+}
+
+.icons a {
+  float: left;
+  width: 30%;
+  text-align: center;
+  }
 
 @media screen and (max-height: 450px) {
   #menu {padding-top: 15px;}

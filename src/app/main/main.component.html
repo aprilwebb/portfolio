@@ -1,19 +1,35 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
 <div id="wrapper">
     <div id="main">
         <section id="about">
             <div class="container">
-                <h1>April Webb</h1>
-                <p>I'm a recent graduate of LaunchCode's LC101 program in Tampa with a desire to continue learning.<br>
-                    Skilled in JavaScript, Java, Angular, Spring Boot, and MySQL. <br>
-                    I believe continuous learning is of utmost importance to build upon a solid foundation of knowledge.
+                <h1>About Me</h1>
+                <p>I've had an interest in technology from a young age and finally decided to pursue a career in the
+                    field.<br>
+                    I'm a recent graduate of LaunchCode's LC101 program in Tampa, where we focused on JavaScript and
+                    Java.<br>
+                    Although frustrating at times, learning programming languages has been such a rewarding experience
+                    for me <br>
+                    because I have a strong desire to continuously learn and I really enjoy problem
+                    solving.<br>
+                    I'm excited for new opportunities to continue growing and learning!
                 </p>
+
             </div>
         </section>
         <hr>
 
         <section id="skills">
             <div class="container">
-                <p>Skills info goes here</p>
+                <h1>Skills</h1>
+
+                <ul class="icons">
+                    <li *ngFor="let skill of skills">
+                        <i class="fa fa-arrow-circle-right"></i>{{skill}}</li>
+                </ul>
             </div>
         </section>
         <hr>
@@ -21,19 +37,30 @@
 
         <section id="projects">
             <div class="container">
-                <p>Here are some of the projects I've worked on.</p>
+                <h1>Projects</h1>
+
+                <p>Here are some of the projects I've worked on:</p>
+
+                <a href="website">
+                    <h3>Harry Potter Trivia</h3>
+                </a>
+                <p>Harry Potter fan site where user can create an account, take quizzes to test their Hogwarts
+                    knowledge, <br>and learn fun facts about the Wizarding World.</p>
+
             </div>
         </section>
         <hr>
 
         <section id="contact">
             <div class="container">
-                <h2>Contact Me</h2>
+                <h1>Let's Connect!</h1>
+                <p>Have a question or want to work together?</p>
                 <form>
-                    <div><input type="text" name="name" id="name" placeholder="Name"></div>
-                    <div><input type="email" name="email" id="email" placeholder="E-mail"></div>
-                    <div><input type="text" name="subject" id="subject" placeholder="Subject"></div>
-                    <div><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+                    <div><input type="text" name="name" id="name" placeholder="Name" size="40"></div><br>
+                    <div><input type="email" name="email" id="email" placeholder="E-mail" size="40"></div><br>
+                    <div><input type="text" name="subject" id="subject" placeholder="Subject" size="40"></div><br>
+                    <div><textarea name="message" id="message" placeholder="Message" rows="6" cols="42"></textarea>
+                    </div><br>
                     <div><input type="submit" value="Send message"></div>
 
                 </form>

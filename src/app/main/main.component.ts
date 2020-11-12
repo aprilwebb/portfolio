@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
+  skills = ['Java', 'JavaScript', 'Angular', 'Spring Boot', 'HTML', 'CSS', 'MySQL', 'Visual Studio Code', 'IntelliJ IDEA', 'MySQL Workbench', 'GitHub'];
 
   constructor() { }
 

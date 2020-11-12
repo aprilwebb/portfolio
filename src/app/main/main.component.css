@@ -1,9 +1,52 @@
 #main{
     margin-left: 350px;
     padding: 0px 10px;
-    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 hr{
-    border-top: 1px dotted lightgreen;
+    border-top: 1px dotted rgb(144, 192, 238);
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    color: rgb(245, 78, 203);
+}
+
+#skills ul, #skills li{
+    margin: 0;
+    padding: 0;
+}
+
+#about p, #projects p, a, h3{
+    text-align: right;
+}
+
+#contact form, p{
+    text-align: center;
+}
+
+.icons, .fa{
+    display: inline-block;
+    text-align: left;
+}
+
+.fa {
+    color:  lightgreen;
+}
+
+::-webkit-input-placeholder {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+:-moz-placeholder {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+::-moz-placeholder {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+:-ms-input-placeholder {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }

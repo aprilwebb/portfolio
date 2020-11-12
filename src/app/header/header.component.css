@@ -1,14 +1,18 @@
-/* .header{
+#mlk {
+  color: lightgreen;
+  margin-left: 350px;
   text-align: center;
-  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.image, .main, img{
-    width: 100%;
-    margin: 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+p{
+  color: rgb(245, 78, 203);
+  margin-left: 350px;
+  font-style: italic;
+  text-align: center;
 }
- */
+
+hr{
+  border-top: 1px dotted rgb(144, 192, 238);
+  margin-left: 350px;
+}
