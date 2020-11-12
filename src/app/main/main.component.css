@@ -13,7 +13,7 @@ ul{
 }
 
 h1{
-    color: rgb(245, 78, 203);
+    color: rgb(97, 96, 96);
 }
 
 #skills ul, #skills li{
@@ -21,17 +21,17 @@ h1{
     padding: 0;
 }
 
-#about p, #projects p, a, h3{
+#about p, #projects p, a, h3, #main h1{
     text-align: right;
 }
 
-#contact form, p{
+#contact form, p, input{
     text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .icons, .fa{
-    display: inline-block;
-    text-align: left;
+    text-align: right;
 }
 
 .fa {

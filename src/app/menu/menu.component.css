@@ -2,6 +2,7 @@
     width: 200px;
     height: 250px;
     border-radius: 50%;
+    border: 2px solid white;
   }
 
   h3, h1{
@@ -35,8 +36,13 @@
   text-align: center;
 }
 
-#nav a:hover, h1:hover{
-  background-color: white;
+@media screen and (max-height: 450px) {
+  #menu {padding-top: 15px;}
+  #nav a {font-size: 18px;}
+}
+
+
+.icons span:hover, #nav h1:hover, #nav a:hover{
   color: rgb(245, 78, 203);
 }
 
@@ -58,7 +64,4 @@ ul .icons {
   text-align: center;
   }
 
-@media screen and (max-height: 450px) {
-  #menu {padding-top: 15px;}
-  #nav a {font-size: 18px;}
-}
+
