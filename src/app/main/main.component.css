@@ -1,7 +1,11 @@
 #main{
-    margin-left: 350px;
+    margin-right: 0;
     padding: 0px 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p, ul{
+    font-size: large;
 }
 
 hr{
@@ -22,16 +26,16 @@ h1{
 }
 
 #about p, #projects p, a, h3, #main h1{
-    text-align: right;
+    text-align: left;
 }
 
 #contact form, p, input{
-    text-align: center;
+    text-align: left;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .icons, .fa{
-    text-align: right;
+    text-align: left;
 }
 
 .fa {
