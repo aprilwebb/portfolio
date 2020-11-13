@@ -9,7 +9,7 @@ p, ul{
 }
 
 hr{
-    border-top: 1px dotted rgb(144, 192, 238);
+    border-top: 1px dotted #b8812c;
 }
 
 ul{
@@ -19,6 +19,10 @@ ul{
 h1{
     color: rgb(97, 96, 96);
 }
+
+a:hover{
+    color: #b8812c;
+  }
 
 #skills ul, #skills li{
     margin: 0;
@@ -34,12 +38,17 @@ h1{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+
 .icons, .fa{
     text-align: left;
 }
 
 .fa {
-    color:  lightgreen;
+    color:  #b82c62;
+}
+
+@media (max-width: 767px) {
+    #about p {width: 545px;}
 }
 
 ::-webkit-input-placeholder {

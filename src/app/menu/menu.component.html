@@ -1,28 +1,41 @@
-<div style="text-align:center" id="menu">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <img src="assets/images/aw.jpg" alt="Avatar" class="avatar">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 
-    <nav id="nav">
-        <a href="#">
-            <h1>{{ title }}</h1>
-        </a>
-        <h3>Software Developer</h3>
+<div class="container-fluid">
 
-        <a href="#about">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+    <button type="button" (click)="showMenu()" id="button" class="btn btn-info">
+        <i class="fa fa-align-justify"></i>
+    </button>
 
-    </nav>
+    <div style="text-align:center" *ngIf="isShown" class="menu">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <footer>
-        <ul class="icons">
-            <a href="https://www.linkedin.com/in/april-webb/"><span class="fa fa-linkedin-square"></span>
+        <img src="assets/images/aw.jpg" alt="Avatar" class="avatar">
+
+
+        <nav id="menu">
+            <a href="#">
+                <h1>{{ title }}</h1>
             </a>
-            <a href="https://github.com/aprilwebb"><span class="fa fa-github"></span></a>
-            <a href="mailto:aprilewebb@gmail.com"><span class="fa fa-envelope-square"></span></a>
-        </ul>
-    </footer>
+            <h3>Software Developer</h3>
 
-</div>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+        <footer>
+            <ul class="icons">
+                <a href="https://www.linkedin.com/in/april-webb/"><span class="fa fa-linkedin-square"></span>
+                </a>
+                <a href="https://github.com/aprilwebb"><span class="fa fa-github"></span></a>
+                <a href="mailto:aprilewebb@gmail.com"><span class="fa fa-envelope-square"></span></a>
+            </ul>
+        </footer>
+
+    </div>

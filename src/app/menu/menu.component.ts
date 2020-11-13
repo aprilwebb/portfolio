@@ -11,7 +11,28 @@ export class MenuComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  isShown: boolean = true;
+  button = document.getElementsByClassName("btn")
+
+  showMenu() {
+    let i;
+
+    for (i = 0; i < this.button.length; i++) {
+      this.button[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        let menu = this.nextElementSibling;
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      });
+    }
   }
+
+  ngOnInit() {
+
+  }
+
 
 }

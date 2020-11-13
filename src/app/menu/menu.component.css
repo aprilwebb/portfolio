@@ -14,20 +14,21 @@
    font-style: italic;
   }
 
-  #menu{
-    height: 100%;
+  .menu{
+    height: 100vh;
     width: 350px;
     position: fixed;
-    z-index: 1;
+    z-index: 999;
     top: 0;
     right: 0;
-    background-color: rgb(144, 192, 238);
+    background-color: rgb(71, 96, 119);
     overflow-x: hidden;
     padding-top: 20px;
+    transition: all 0.3s;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-#nav a {
+.menu a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 16px;
@@ -36,14 +37,12 @@
   text-align: center;
 }
 
-@media screen and (max-height: 450px) {
-  #menu {padding-top: 15px;}
-  #nav a {font-size: 18px;}
+#button{
+  display: none;
 }
 
-
-.icons span:hover, #nav h1:hover, #nav a:hover{
-  color: rgb(245, 78, 203);
+.icons span:hover, .menu h1:hover, .menu a:hover{
+  color: #b8812c;
 }
 
 .fa{
@@ -64,4 +63,17 @@ ul .icons {
   text-align: center;
   }
 
-
+  @media (max-width: 767px) {
+  .menu {display: none; width: 175px;}
+  .avatar{display: none;}
+  h1{font-size: large;}
+  h3{display: none;}
+  .icons a{float: left; width: 25%; text-align: center;}
+  .active, .menu:hover{background-color: rgb(144, 192, 238); color: white;}
+  #button, #button .fa{
+    display: block;
+    color: rgb(144, 192, 238);
+    background-color: white;
+    float: none;
+    border: none;}
+}

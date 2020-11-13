@@ -1,5 +1,5 @@
 #mlk {
-  color: lightgreen;
+  color: #b82c62;
   margin-right: 350px;
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -13,6 +13,11 @@ p{
 }
 
 hr{
-  border-top: 1px dotted rgb(144, 192, 238);
-  margin-right: 350px;
+  border-top: 1px dotted #b8812c;
+  margin-left: 15px;
+}
+
+@media (max-width: 767px) {
+  header{display: none;
+  }
 }
