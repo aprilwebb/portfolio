@@ -1,0 +1,1 @@
+{"version":3,"sources":["./src/styles.css"],"names":[],"mappings":"AAAA,KACA,sBACA","file":"styles.5fdaea8ab4c525e0d450.css","sourcesContent":["html{\n    scroll-behavior: smooth;\n}\n\n"],"sourceRoot":"webpack:///"}
