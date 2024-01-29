@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Courier+Prime&family=Give+You+Glory&family=Over+the+Rainbow&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/aca8370119.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>April Webb</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="container">April Webb</h1>
+      <div>
+        <p class="box" style="display: inline-block">
+          Web Developer. Born & raised in St. Croix. Based in Tampa, FL. Loves
+          K-dramas, reading, and drinking bubble tea. 🧋 view my projects below,
+          or say hello via
+          <a href="https://www.linkedin.com/in/april-webb/" target="_blank"
+            >linkedin</a
+          >
+          or <a href="mailto:aewebb89@gmail.com">email</a>. :)
+        </p>
+      </div>
+    </div>
+    <div class="projects">
+      <div class="project-card">
+        <div class="project-thumbnail">
+          <img src="./images/taskmaster.svg" alt="Taskmaster Project" />
+        </div>
+        <div class="project-info">
+          <a href="https://app-taskmaster-df338a49fdba.herokuapp.com/"
+            ><h3>Taskmaster</h3></a
+          >
+          <p>
+            App that allows users to create an account/sign in and create to do
+            lists, edit tasks, and check off completed tasks. Lists are stored
+            in PostgreSQL database.
+          </p>
+          <p class="small-text">
+            JavaScript • EJS • Node • Express • PostgreSQL
+          </p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-thumbnail">
+          <img src="./images/bookfinder.svg" alt="myReads Project" />
+        </div>
+        <div class="project-info">
+          <a href="https://aprilwebb.github.io/bookfinder/"
+            ><h3>bookfinder</h3></a
+          >
+          <p>
+            React app that allows users to search for books and sort by
+            newest/oldest. Users can view extended details at the click of a
+            button, which allows them to see additional details about the
+            selected title.
+          </p>
+          <p class="italic-text">
+            Features currently in progress: User authentication, ability to add
+            books to different shelves
+          </p>
+          <p class="small-text">JavaScript • React • Node • Google Books API</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="toolkit">
+      <p>JavaScript</p>
+    </div>
+    <footer>
+      <p id="copyright">&copy; <span id="currentYear"></span> April Webb</p>
+      <p>•</p>
+      <p id="resume">
+        <a href="docs/April_Webb_Resume.pdf" target="_blank"> Resume </a>
+      </p>
+    </footer>
+  </body>
+
+  <script>
+    var currentYear = new Date().getFullYear();
+    document.getElementById("currentYear").innerText = currentYear;
+  </script>
+</html>
