@@ -95,8 +95,10 @@ footer {
   margin-right: 10px;
 }
 
-#resume a {
+#resume a,
+#github a {
   margin-left: 10px;
+  margin-right: 10px;
   text-decoration: none;
 }
 
