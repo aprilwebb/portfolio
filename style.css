@@ -1,9 +1,13 @@
-h1 {
-  /* font-family: "Hachi Maru Pop", cursive; */
-  font-family: "Over the Rainbow", cursive;
+html {
+  background-color: #fffbf0fd;
+}
+
+h1,
+h2 {
   font-family: "Give You Glory", cursive;
   margin: 0;
   font-size: 50px;
+  color: #9ebbe8;
 }
 
 .container {
@@ -24,7 +28,6 @@ h1 {
 }
 
 .header {
-  color: #9ebbe8;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -35,8 +38,15 @@ h1 {
 
 .header p {
   color: #333333;
-  font-size: 56px;
+  font-size: 40px;
   text-transform: lowercase;
+  font-family: "Cormorant Garamond", serif;
+}
+
+#toolkit,
+#myCerts,
+footer,
+.project-info {
   font-family: "Cormorant Garamond", serif;
 }
 
@@ -49,7 +59,8 @@ h1 {
 }
 
 .project-card {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   margin: 30px;
 }
 
@@ -65,7 +76,7 @@ h1 {
 }
 
 .small-text {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .italic-text {
@@ -89,24 +100,44 @@ footer {
   text-decoration: none;
 }
 
-#toolkit {
+#myUL {
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-#toolkit li {
+#myUL li {
+  flex: 1 0 15%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   margin: 10px;
 }
 
-#toolkit li .icons {
+#myUL li svg {
   width: 40px;
   height: 40px;
   margin-bottom: 10px;
 }
 
+.icons {
+  width: 40px;
+  height: 40px;
+}
+
+#myCerts {
+  list-style-type: none;
+  column-gap: 50px;
+}
 @media only screen and (max-width: 768px) {
   .project-card {
     margin: 15px;
+  }
+  .header p {
+    font-size: 24px;
+  }
+  #myUL li {
+    flex: 1 0 30%;
   }
 }
